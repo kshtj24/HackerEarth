@@ -4,14 +4,14 @@ import java.util.*;
 
 public class WhiteSpace{
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String s = br.readLine();
 
 		char[] chars = s.toCharArray();
 		int count = 0;
 		for(int i = 0; i < chars.length; i++){
-			if(chars[0] == ' '){
+			if(chars[i] == ' '){
 				count++;
 			}
 		}
